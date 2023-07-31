@@ -1,0 +1,37 @@
+body {
+  font-family: 'apertura', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $gray;
+}
+.body-copy-bold {
+  font-family: 'apertura', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $gray;
+}
+h1 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $gray;
+}
+h2 {
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: $gray;
+}
+h3,
+h4,
+h5 {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sub-title {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $white;
+}

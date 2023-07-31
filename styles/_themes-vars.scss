@@ -1,0 +1,26 @@
+$purple: #6500D9;
+$teal: #00F0D4;
+$blue: #00D9FF;
+$yellow: #FFC552;
+$red: #E81741;
+$pink: #D76EFF;
+$orange: #FD470D;
+$navy: #090949;
+$med-gray: #BCBCCC;
+$gray: #393434;
+$white: #ffffff;
+
+$twilight: #6500D9,#00D9FF;
+$cotton-candy: #D76EFF, #FD470D;
+$bahama-sea: #00F0D4, #00D9FF;
+$violet-dream: #6500D9, #D76EFF;
+$blood-orange: #FD470D, #fd610d;
+$sunset: #E81741, #FFC552;
+$purple-rain: #6500D9, #C9A6FF;
+
+@mixin gradient($direction, $color) { 
+    background: -webkit-linear-gradient($direction, $color);
+    background: -moz-linear-gradient($direction, $color);
+    background: -o-linear-gradient($direction, $color);
+    background: linear-gradient($direction, $color);  
+  }

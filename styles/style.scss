@@ -1,0 +1,36 @@
+// color variants
+@import 'themes-vars';
+@import 'typography';
+@import 'interface';
+@import 'pages/products';
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  font-size: 14px;
+}
+
+.copy-icon {
+  padding-bottom: 15px;
+  color: black;
+}
+
+.api-secret-info {
+  margin: 30px 100px 10px 60px;
+  padding: 20px;
+  background-color: #efe;
+  border: 1px solid #ded;
+  color: #015101;
+  display: flex;
+}
+
+.info-icon {
+  padding: 15px;
+}
+
+.default-text {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}

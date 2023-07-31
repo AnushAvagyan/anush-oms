@@ -1,0 +1,141 @@
+#top-navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1001;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .MuiButton-root {
+    margin: 0 10px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .logo {
+      margin: 0 10px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    color: $gray;
+    .name {
+      font-family: apertura, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: $purple;
+    }
+  }
+}
+.cc-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.header-home {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: burlywood;
+  height: 200px;
+}
+#main-window {
+  position: relative;
+  margin: 0px 40px;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+  width: 100%;
+}
+#side-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+  background: white;
+  box-shadow: 10px 10px 40px #ededed, -10px -10px 60px #ffffff;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+
+  #menu {
+    .MuiSvgIcon-root {
+      color: $navy !important;
+    }
+    .MuiListItemText-root {
+      color: $navy !important;
+      margin-top: 4px;
+      margin-bottom: 0px;
+      .MuiTypography-root {
+        font-family: 'poppins', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    }
+    .sub-item {
+      .MuiTypography-root {
+        font-family: apertura, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 14px;
+      }
+    }
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 20px 0 10px 0;
+  }
+}
+
+.MuiButton-root {
+  background-color: burlywood !important;
+  color: white !important;
+  &:hover {
+    @include gradient(to bottom, $purple-rain);
+    color: $white !important;
+  }
+  border-radius: 5px !important;
+  min-width: 30px !important;
+  font-family: apertura, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  margin: 10px !important;
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #5800b7, -20px -20px 60px #7600f7;
+  height: 100vh;
+  width: 50%;
+}
+
+.slide-left {
+  left: 280px !important;
+}
+.dashboard {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.dashboard-text {
+  margin-left: 30px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
