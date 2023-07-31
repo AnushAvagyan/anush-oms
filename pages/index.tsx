@@ -26,7 +26,7 @@ export default function Home() {
         <Image
           className="logo"
           alt="logo"
-          src={'/images/order-image.png'}
+          src={'https://testanush.s3.us-west-1.amazonaws.com/order-image.jpeg'}
           width={1450}
           height={800}
         />
