@@ -1,6 +1,14 @@
 import Head from 'next/head';
 import { NextPageContext } from 'next';
-import Image from 'next/image';
+import Image, { ImageLoaderProps } from 'next/image';
+import { ImageLoader } from 'next/dist/client/image';
+
+const contentfulImageLoader: ImageLoader = ({
+  src,
+  width,
+}: ImageLoaderProps) => {
+  return `${src}?w=${width}`;
+};
 
 export async function getServerSideProps(ctx: NextPageContext) {
   return {
@@ -29,6 +37,7 @@ export default function Home() {
           src={'https://testanush.s3.us-west-1.amazonaws.com/order-image.jpeg'}
           width={1450}
           height={800}
+          loader={contentfulImageLoader}
         />
       </main>
     </>
